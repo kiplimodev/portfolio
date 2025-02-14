@@ -60,6 +60,28 @@ ul:not(nav ul) li {
   margin-bottom: 10px;
 }
 
+
+a {
+  color: #f4c542; 
+  text-decoration: underline; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00; 
+  text-decoration: none; 
+}
+
+li {
+  margin-bottom: 10px; 
+}
+
+li a {
+  display: inline-block;
+  margin-top: 5px; 
+}
+
 /* Hero Section */
 .hero-section{
 display: flex;
@@ -208,7 +230,7 @@ list-style: disc;
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Initially hide the description */
+/* Initially hiding the description */
 .skill-description {
   position: absolute;
   top: 50%;
@@ -217,10 +239,10 @@ list-style: disc;
   background: rgba(0, 0, 0, 0.95);
   color: white;
   text-align: center;
-  padding: 15px 20px; /* Adds more internal spacing */
+  padding: 15px 20px;
   border-radius: 5px;
   font-size: 0.85em;
-  line-height: 1.5; /* Improves readability */
+  line-height: 1.5; 
   transform: translate(-50%, -50%);
   opacity: 0;
   visibility: hidden;
@@ -237,14 +259,14 @@ list-style: disc;
   visibility: visible;
 }
 
-/* Keep the golden color of stars */
+/* Keeping golden color of stars */
 .checked {
-  color: orange; /* Ensures the stars always remain golden */
+  color: orange; 
 }
-
+S
 /* On hover: Fade out stars (but keep their color) */
 .skillbox:hover .stars {
-  opacity: 0.2; /* Instead of hiding completely, just reduce visibility */
+  opacity: 0.2; 
 }
 
 
@@ -325,7 +347,7 @@ justify-content: center;
 background-color: rgb(30, 30, 30);
 border: 1px solid rgb(180, 140, 20);
 border-radius: 8px;
-width: 300px;
+max-width: 900px;
 padding: 30px;
 text-align: left;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -360,15 +382,17 @@ margin-bottom: 8px;
 }
 
 .project-card .btn {
-display: block; 
-width: 150px;
+display: flex;
+justify-content: center;
+max-width: 150px;
 margin: 30px auto;
-padding: 10px 0; 
+padding: 14px 24px; 
 background-color: rgb(113, 88, 23);
 color: rgb(239, 239, 239);
 border-radius: 5px;
 text-decoration: none;
-font-size: 14px;
+font-size: 16px;
+line-height: 1.4;
 text-align: center;
 transition: background-color 0.3s ease;
 
